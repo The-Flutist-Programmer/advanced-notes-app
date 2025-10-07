@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Advanced Notes App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title-container">
+      <h2>Advanced Notes App</h2>
+      <input type="text" id="searchInput" class="search-bar" placeholder="Search notes ..." autocomplete="off" />
+    </div>
+
+    <div class="controls">
+      <textarea id="noteInput" placeholder="Write your note here ..."></textarea>
+      <select id="colorSelect">
+        <option value="#ffffff">White</option>
+        <option value="#ffeb3b">Yellow</option>
+        <option value="#ffc107">Amber</option>
+        <option value="#4caf50">Green</option>
+        <option value="#03a9f4">Blue</option>
+        <option value="#e91e63">Pink</option>
+      </select>
+      <button onclick="addNote()">Save Note</button>
+    </div>
+
+    <div class="notes" id="notes"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
